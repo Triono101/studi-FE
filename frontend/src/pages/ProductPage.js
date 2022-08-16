@@ -15,12 +15,12 @@ const ProductPage = () => {
       </Link>
       <Row>
         <Col md={6}>
-          <Image src={product.image} alt={product.name} fluid></Image>
+          <Image src={product.img} alt={product.title} fluid></Image>
         </Col>
         <Col md={3}>
           <ListGroup variant="flush">
             <ListGroup.Item>
-              <h3>{product.name}</h3>
+              <h3>{product.title}</h3>
             </ListGroup.Item>
             <ListGroup.Item>
               <Rating
@@ -29,7 +29,7 @@ const ProductPage = () => {
               ></Rating>
               <ListGroup>Price: {numberFormat(product.price)}</ListGroup>
             </ListGroup.Item>
-            <ListGroup.Item>Description: {product.description}</ListGroup.Item>
+            <ListGroup.Item>Description: {product.desc}</ListGroup.Item>
           </ListGroup>
         </Col>
         <Col md={3}>
@@ -46,16 +46,14 @@ const ProductPage = () => {
               <ListGroup.Item>
                 <Row>
                   <Col>Status:</Col>
-                  <Col>
-                    {product.countInStock > 0 ? "In Stock" : "Out of Stock"}
-                  </Col>
+                  <Col>{product.inStock > 0 ? "In Stock" : "Out of Stock"}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup>
                 <Button
                   className="btn-block"
                   type="button"
-                  disabled={product.countInStock === 0}
+                  disabled={product.inStock === 0}
                 >
                   {" "}
                   Add to Card

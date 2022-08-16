@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Backend api and database server",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "axios": "^0.27.2",
     "cors": "^2.8.5",
@@ -13,11 +13,14 @@
     "mongoose": "^6.5.2"
   },
   "devDependencies": {
+    "concurrently": "^7.3.0",
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon .server.js"
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "ecommerce",

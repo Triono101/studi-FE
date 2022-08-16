@@ -8,7 +8,7 @@ function Header() {
       <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>SHINSEGAE ELECTRONIC</Navbar.Brand>
+            <Navbar.Brand>SHINSEGAE GADGET</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
