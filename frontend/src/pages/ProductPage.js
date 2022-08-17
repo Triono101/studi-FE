@@ -1,13 +1,27 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Row, Col, Image, ListGroup, Card, Button } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
+import { products } from "../FetchMethod";
 import Rating from "../components/Rating";
-import products from "../products";
 import { numberFormat } from "../helpers";
+import { useEffect, useState } from "react";
 
 const ProductPage = () => {
-  const params = useParams();
-  const product = products.find((p) => p._id === params.id);
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const res = await products.get("/products/find/" + id);
+        setProduct(res.data);
+      } catch {}
+    };
+    getProduct();
+  }, [id]);
+
   return (
     <>
       <Link className="btn btn-light my-3" to="/">
@@ -29,7 +43,9 @@ const ProductPage = () => {
               ></Rating>
               <ListGroup>Price: {numberFormat(product.price)}</ListGroup>
             </ListGroup.Item>
-            <ListGroup.Item>Description: {product.desc}</ListGroup.Item>
+            <ListGroup.Item>
+              <strong>{product.desc}</strong>{" "}
+            </ListGroup.Item>
           </ListGroup>
         </Col>
         <Col md={3}>

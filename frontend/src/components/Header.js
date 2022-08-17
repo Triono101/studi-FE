@@ -5,10 +5,10 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 function Header() {
   return (
     <header>
-      <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="success" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>SHINSEGAE GADGET</Navbar.Brand>
+            <Navbar.Brand>SONAGI 전자</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
