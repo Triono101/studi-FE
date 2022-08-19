@@ -2,14 +2,14 @@ import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Homepage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
-      <Header></Header>
+      <Header />
       <main>
         <Container>
           <Routes>
@@ -18,7 +18,9 @@ function App() {
           </Routes>
         </Container>
       </main>
-      <Footer></Footer>
+      <div>
+        <Footer />
+      </div>
     </Router>
   );
 }
