@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Col, Row } from "react-bootstrap";
 import Product from "../components/Product";
 import axios from "axios";
 
@@ -16,14 +15,14 @@ const HomePage = () => {
 
   return (
     <>
-      <h3>Latest Products</h3>
-      <Row>
+      <h4>Popular Products</h4>
+      <div className="item-container">
         {products.map((product) => (
-          <Col sm={12} md={6} lg={4} xl={3}>
-            <Product product={product}></Product>
-          </Col>
+          <p>
+            <Product product={product} />
+          </p>
         ))}
-      </Row>
+      </div>
     </>
   );
 };

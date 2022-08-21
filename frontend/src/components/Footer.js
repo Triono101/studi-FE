@@ -190,25 +190,18 @@ const Footer = () => {
                 Mollitia accusantium quaerat veritatis.
               </p>
               <form action="#">
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="text"
                     placeholder="Email Address ..."
                     aria-label="Email Address ..."
                     aria-describedby="button-addon2"
                   />
                   <button
-                    class="btn btn-primary"
+                    className="dana btn btn-primary"
                     id="button-addon2"
                     type="button"
-                    style={{
-                      color: "black",
-                      backgroundColor: "#FCC00A",
-                      border: "none",
-                      marginLeft: "7px",
-                      fontWeight: "bold",
-                    }}
                   >
                     {" "}
                     Subscribe

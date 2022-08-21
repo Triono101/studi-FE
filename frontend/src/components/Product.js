@@ -1,27 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import Rating from "./Rating";
-import { numberFormat } from "../helpers";
+import { formatRupiah } from "../helpers";
 
 const product = ({ product }) => {
   return (
-    <Card className="my-3 p-3 rounded">
-      <Link to={`/product/${product._id}`}>
-        <Card.Img src={product.img}></Card.Img>
-      </Link>
-      <Card.Body>
+    <div className="item-container">
+      <div className="card2">
         <Link to={`/product/${product._id}`}>
-          <Card.Title as="div">
-            <strong>{product.title}</strong>
-          </Card.Title>
+          <Card.Img className="image" variant="top" src={product.img} />
         </Link>
-      </Card.Body>
-      <Card.Text as="div">
-        <Rating stars={product.rating} reviews={product.numReviews}></Rating>
-      </Card.Text>
-      <Card.Text as="h4">{numberFormat(product.price)}</Card.Text>
-    </Card>
+        <Card.Body>
+          <Link className="link-title" to={`/product/${product._id}`}>
+            <Card.Title className="body-card">
+              <strong>{product.title}</strong>
+            </Card.Title>
+          </Link>
+          <Card.Text as="div">
+            <Rating stars={product.rating} reviews={product.numReviews} />
+          </Card.Text>
+          <Card.Text className="text">
+            <strong>{formatRupiah(product.price)}</strong>
+          </Card.Text>
+          <Button>
+            <i className="cart-fas fas fa-cart-arrow-down"></i>
+          </Button>
+        </Card.Body>
+      </div>
+    </div>
   );
 };
 
