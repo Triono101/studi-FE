@@ -42,7 +42,7 @@ const Header = () => {
     <div>
       <nav
         className="navbar navbar-expand-lg navbar-light"
-        style={{ backgroundColor: "#fcc00a" }}
+        style={{ backgroundColor: "black" }}
       >
         <button
           className="navbar1 navbar-toggler"
@@ -78,7 +78,7 @@ const Header = () => {
         </span>
 
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <span className="navbar-nav ml-auto">
+          <span className="nav2 navbar-nav ml-auto">
             <span className="my-2 my-sm-0 mx-2">
               <a href="wikipedia.com" className="navbar1">
                 My Account
@@ -103,7 +103,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <MDBNavbar expand="lg" style={{ backgroundColor: "rgb(252, 192, 10)" }}>
+      <MDBNavbar expand="lg" style={{ backgroundColor: "black" }}>
         <MDBContainer fluid>
           <MDBNavbarBrand>
             <a href="/" className="navbar-brand">
@@ -173,9 +173,27 @@ const Header = () => {
             </MDBInputGroup>
             <MDBCollapse navbar show={showBasic}>
               <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
-                <MDBIcon className="side far fa-user" />
-                <MDBIcon className="side fas fa-heart" />
-                <MDBIcon className="side fas fa-shopping-basket" />
+                <MDBNavbarItem>
+                  <MDBNavbarLink
+                    to="/login"
+                    className="side fas fa-user"
+                    id="nav"
+                  ></MDBNavbarLink>
+                </MDBNavbarItem>
+                <MDBNavbarItem>
+                  <MDBNavbarLink
+                    to="/cart"
+                    className="side fas fa-heart"
+                    id="nav"
+                  ></MDBNavbarLink>
+                </MDBNavbarItem>
+                <MDBNavbarItem>
+                  <MDBNavbarLink
+                    to="/cart"
+                    className="side fas fa-shopping-basket"
+                    id="nav"
+                  ></MDBNavbarLink>
+                </MDBNavbarItem>
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBCollapse>

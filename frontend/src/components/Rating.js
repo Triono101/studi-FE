@@ -7,9 +7,9 @@ const Rating = ({ stars, reviews }) => {
         <i
           style={{ color: "#f8e825" }}
           className={
-            stars > 1
+            stars > 0.9
               ? "fas fa-star"
-              : stars > 0.5
+              : stars > 0.2
               ? "fas fa-star-half-alt"
               : "far fa-star"
           }
@@ -19,9 +19,9 @@ const Rating = ({ stars, reviews }) => {
         <i
           style={{ color: "#f8e825" }}
           className={
-            stars > 2
+            stars > 2.9
               ? "fas fa-star"
-              : stars > 1.5
+              : stars > 1.2
               ? "fas fa-star-half-alt"
               : "far fa-star"
           }
@@ -31,9 +31,9 @@ const Rating = ({ stars, reviews }) => {
         <i
           style={{ color: "#f8e825" }}
           className={
-            stars > 3
+            stars > 2.9
               ? "fas fa-star"
-              : stars > 2.5
+              : stars > 2.2
               ? "fas fa-star-half-alt"
               : "far fa-star"
           }
@@ -43,9 +43,9 @@ const Rating = ({ stars, reviews }) => {
         <i
           style={{ color: "#f8e825" }}
           className={
-            stars > 4
+            stars > 3.9
               ? "fas fa-star"
-              : stars > 3.5
+              : stars > 3.2
               ? "fas fa-star-half-alt"
               : "far fa-star"
           }
@@ -55,9 +55,9 @@ const Rating = ({ stars, reviews }) => {
         <i
           style={{ color: "#f8e825" }}
           className={
-            stars > 5
+            stars > 4.9
               ? "fas fa-star"
-              : stars > 4.5
+              : stars > 4.2
               ? "fas fa-star-half-alt"
               : "far fa-star"
           }

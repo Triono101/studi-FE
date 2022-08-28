@@ -10,10 +10,9 @@ import {
 
 const Footer = () => {
   return (
-    <MDBFooter bgColor="white" className="text-center text-lg-start">
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+    <MDBFooter className="footer-text text-center text-lg-start">
       <section>
-        <MDBContainer className="ara text-center text-md-start mt-5">
+        <div className="footer text-center text-md-start mt-5">
           <MDBRow className="mt-3">
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h4
@@ -24,26 +23,28 @@ const Footer = () => {
               >
                 Contact Us
               </h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia accusantium quaerat veritatis.
-              </p>
-              <p>
-                <MDBIcon icon="earth" className="me-2" /> Lampung, Indonesia -
-                34385
-              </p>
-              <p>
-                <MDBIcon far icon="envelope" className="me-3" />{" "}
-                hexagon-shop@example.com
-              </p>
-              <p>
-                <MDBIcon fas icon="mobile-alt" className="me-3" /> +62 812 345
-                67890
-              </p>
-              <p>
-                <MDBIcon far icon="clock" className="me-3" /> Mon - Sat (10:00am
-                - 07:00pm)
-              </p>
+              <div className="text-1">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia accusantium quaerat veritatis.
+                </p>
+                <p>
+                  <MDBIcon icon="map-marked-alt" className="me-2" /> Lampung,
+                  Indonesia - 34385
+                </p>
+                <p>
+                  <MDBIcon far icon="envelope" className="me-3" />{" "}
+                  hexagon-shop@example.com
+                </p>
+                <p>
+                  <MDBIcon fas icon="mobile-alt" className="me-3" /> +62 812 345
+                  67890
+                </p>
+                <p>
+                  <MDBIcon far icon="clock" className="me-3" /> Mon - Sat
+                  (10:00am - 07:00pm)
+                </p>
+              </div>
             </MDBCol>
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h4
@@ -55,61 +56,63 @@ const Footer = () => {
                 <MDBIcon className="me-3" />
                 Information
               </h4>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  About Us
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Delivery Information
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Returns
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Site Map
-                </a>
-              </p>
+              <div className="text-1">
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    About Us
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Delivery Information
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Orders
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Returns
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Site Map
+                  </a>
+                </p>
+              </div>
             </MDBCol>
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <h4
@@ -120,61 +123,63 @@ const Footer = () => {
               >
                 My Account
               </h4>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Store Location
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Order History
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Wish List
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Setting
-                </a>
-              </p>
-              <p>
-                <a
-                  href="#!"
-                  style={{
-                    textDecoration: "none",
-                    color: "black",
-                  }}
-                >
-                  Newsletter
-                </a>
-              </p>
+              <div className="text-1">
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Address
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Order History
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Wish List
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    Setting
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="#!"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                    }}
+                  >
+                    My Catalog
+                  </a>
+                </p>
+              </div>
             </MDBCol>
             <MDBCol md="6" lg="4" xl="3" className="mx-auto mb-4">
               <h4
@@ -185,31 +190,33 @@ const Footer = () => {
               >
                 Newsletter
               </h4>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Mollitia accusantium quaerat veritatis.
-              </p>
-              <form action="#">
-                <div className="input-group mb-3">
-                  <input
-                    className="form-control"
-                    type="text"
-                    placeholder="Email Address ..."
-                    aria-label="Email Address ..."
-                    aria-describedby="button-addon2"
-                  />
-                  <button
-                    className="dana btn btn-primary"
-                    id="button-addon2"
-                    type="button"
-                  >
-                    {" "}
-                    Subscribe
-                  </button>
-                </div>
-              </form>{" "}
-              <br />
-              <p>Follow us on social media</p>
+              <div className="text-1">
+                <p style={{ color: "white" }}>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia accusantium quaerat veritatis.
+                </p>
+                <form action="#">
+                  <div className="input-group mb-3">
+                    <input
+                      className="form-control"
+                      type="text"
+                      placeholder="Email Address ..."
+                      aria-label="Email Address ..."
+                      aria-describedby="button-addon2"
+                    />
+                    <button
+                      className="dana btn btn-primary"
+                      id="button-addon2"
+                      type="button"
+                    >
+                      {" "}
+                      Subscribe
+                    </button>
+                  </div>
+                </form>{" "}
+                <br />
+                <p style={{ color: "white" }}>Follow us on social media</p>
+              </div>
               <>
                 <MDBBtn
                   className="m-1"
@@ -273,28 +280,15 @@ const Footer = () => {
               </>
             </MDBCol>
           </MDBRow>
-        </MDBContainer>
+        </div>
       </section>
-      <section>
-        <MDBContainer
-          className="text-center p-4"
-          style={{ backgroundColor: "white" }}
-        >
-          Copyright &copy;{" "}
-          <a
-            className="fw-bold"
-            href="https://mdbootstrap.com/"
-            style={{
-              textDecoration: "none",
-              color: "#4267B2",
-              fontWeight: "bold",
-            }}
-          >
-            Hexagon
-          </a>{" "}
-          2022
-        </MDBContainer>
-      </section>
+      <MDBContainer className="year text-center p-4" style={{ color: "white" }}>
+        Copyright &copy; 2022{" "}
+        <a className="fw-bold" href="https://mdbootstrap.com/">
+          Shinsegae Inc
+        </a>{" "}
+        . All Rights Reserved.
+      </MDBContainer>
     </MDBFooter>
   );
 };

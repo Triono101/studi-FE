@@ -1,8 +1,5 @@
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+main {
+  min-height: 100vh;
 }
 
 h4 {
@@ -10,24 +7,7 @@ h4 {
   font-weight: bold;
 }
 
-.rating {
-  padding-bottom: 7px;
-}
-
-.rating span {
-  margin: 1px;
-}
-
-.hex {
-  color: #f5f5f5;
-  font-size: 35px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.hex:hover {
-  text-shadow: 1px 1px 2px #000000;
-}
-
+/* Navbar */
 #nav {
   text-decoration: none;
   color: rgb(250, 250, 250);
@@ -38,7 +18,23 @@ h4 {
 }
 
 #nav:hover {
-  text-shadow: 1px 2px 2px #000000;
+  text-shadow: 1px 2px 2px #464444;
+}
+
+.nav2 {
+  margin-top: 15px;
+}
+
+.navbar1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.navbar1:hover {
+  color: rgb(61, 61, 61);
+  text-decoration: none;
 }
 
 .searchBar {
@@ -76,88 +72,116 @@ h4 {
 }
 
 .side {
-  margin-top: 5px;
-  margin-left: 20px;
+  margin-top: 10px;
   color: rgb(250, 250, 250);
   font-size: xx-large;
   cursor: pointer;
 }
 
 .side:hover {
-  text-shadow: 1px 2px 2px #000000;
+  text-shadow: 1px 2px 2px #464444;
 }
 
-.ara {
-  font-weight: bold;
+/* Body */
+.rating {
+  padding-bottom: 7px;
 }
 
-.dana {
-  color: #000000;
-  background-color: #fcc00a;
-  border: none;
-  margin-left: 7px;
-  font-weight: bold;
+.rating span {
+  margin: 1px;
 }
 
-.dana:hover {
-  background-color: #fcc00a;
+.hex {
   color: #f5f5f5;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.navbar1 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #f5f5f5;
-  text-decoration: none;
-}
-
-.navbar1:hover {
-  color: rgb(4, 128, 252);
-  text-decoration: none;
+.hex:hover {
+  text-shadow: 1px 2px 2px grey;
 }
 
 .item-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 25px;
 }
 
 .card2 {
-  box-sizing: border-box;
+  margin-top: 40px;
   text-align: center;
-  padding: 15px;
-  width: 250px;
-  height: 365px;
-  border-radius: 8px;
+  padding: 16px;
+  width: 240px;
+  height: 340px;
+  border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 3px;
 }
 
+.buttons1 {
+  margin: 3px;
+  padding: 5px;
+}
+
 .image {
-  width: 215px;
-  height: 170px;
+  width: 200px;
+  height: 150px;
   align-items: center;
   justify-content: center;
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 25%, 95%);
   border-radius: 15px;
 }
 
 .body-card {
   font-size: 16.5px;
   text-decoration: none;
-  color: dodgerblue;
+  color: rgb(4, 8, 255);
 }
 
 .body-card:hover {
   text-decoration: none;
-  color: rgb(140, 193, 245);
+  color: dodgerblue;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .cart-fas {
   font-size: 20px;
-  color: #fcc00a;
+  color: #ffa500;
+}
+
+/* Footer */
+.footer-text {
+  background-color: black;
+}
+
+.footer {
+  margin: 40px;
+}
+
+.fw-bold {
+  text-decoration: none;
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.dana {
+  color: white;
+  background-color: orangered;
+  border: none;
+  margin-left: 7px;
+  font-weight: bold;
+}
+
+.dana:hover {
+  background-color: orange;
+}
+
+.mx-auto {
+  color: white;
+}
+
+.text-1 {
+  font-weight: bold;
 }
