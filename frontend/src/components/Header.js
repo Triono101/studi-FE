@@ -168,7 +168,7 @@ const Header = () => {
                 type="submit"
                 name="searchQuerySubmit"
               >
-                <i className="fa fa-search" />
+                <i className="search1 fa fa-search" />
               </button>
             </MDBInputGroup>
             <MDBCollapse navbar show={showBasic}>

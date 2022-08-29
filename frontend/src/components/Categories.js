@@ -5,7 +5,7 @@ import "../App.css";
 const Categories = () => {
   return (
     <div className="container my-3">
-      <h4 className="display-6 fw-bolder text-center">Popular Products</h4>
+      <h4 className="display-6 fw-bolder text-center">Featured Products</h4>
       <hr />
       <div className="d-flex justify-content-center">
         {categories.map((product) => (

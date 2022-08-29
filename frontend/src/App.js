@@ -14,6 +14,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <br />
       <Slide />
       <main>
         <Container>

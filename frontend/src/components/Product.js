@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { Button, Card } from "react-bootstrap";
 import Rating from "./Rating";
@@ -25,8 +27,8 @@ const Product = ({ product }) => {
               <Card.Text className="text">
                 <strong>{formatRupiah(product?.price)}</strong>
               </Card.Text>
-              <Button className="button-">
-                <i className="cart-fas fas fa-cart-arrow-down"></i>
+              <Button variant="primary" className="button-1">
+                <FontAwesomeIcon className="button-2" icon={faCartArrowDown} />
               </Button>
             </Card.Body>
           </div>

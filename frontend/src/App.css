@@ -1,5 +1,5 @@
-main {
-  min-height: 100vh;
+* {
+  background-color: black;
 }
 
 h4 {
@@ -43,6 +43,10 @@ h4 {
   flex-direction: row;
 }
 
+.search1 {
+  background-color: white;
+}
+
 #searchQueryInput {
   width: 100%;
   height: 45px;
@@ -82,9 +86,38 @@ h4 {
   text-shadow: 1px 2px 2px #464444;
 }
 
+/* Category */
+.display-6 {
+  color: white;
+}
+
+.buttons1 {
+  font-weight: 600;
+  margin: 3px;
+  padding: 5px;
+}
+
+.buttons1:hover {
+  border: 1px solid rgb(13, 133, 253);
+  color: black;
+  background-color: white;
+}
+
+.button01 {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+.button01:hover {
+  color: white;
+  background-color: #464444;
+}
+
 /* Body */
 .rating {
   padding-bottom: 7px;
+  color: white;
 }
 
 .rating span {
@@ -108,23 +141,18 @@ h4 {
 }
 
 .card2 {
-  margin-top: 40px;
+  margin-top: 35px;
   text-align: center;
-  padding: 16px;
+  padding: 18px;
   width: 240px;
-  height: 340px;
+  height: 360px;
   border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 3px;
-}
-
-.buttons1 {
-  margin: 3px;
-  padding: 5px;
+  box-shadow: rgba(170, 169, 169, 0.2) 2px 0px 8px 3px;
 }
 
 .image {
   width: 200px;
-  height: 150px;
+  height: 155px;
   align-items: center;
   justify-content: center;
   background-color: hsl(0, 25%, 95%);
@@ -134,7 +162,7 @@ h4 {
 .body-card {
   font-size: 16.5px;
   text-decoration: none;
-  color: rgb(4, 8, 255);
+  color: white;
 }
 
 .body-card:hover {
@@ -144,11 +172,26 @@ h4 {
 
 .text {
   font-size: 18px;
+  color: white;
 }
 
 .cart-fas {
   font-size: 20px;
   color: #ffa500;
+}
+
+.button-1 {
+  background-color: black;
+  color: white;
+}
+
+.button-1:hover {
+  background-color: black;
+  border: 1px solid dodgerblue;
+}
+
+.button-2 {
+  font-size: 22px;
 }
 
 /* Footer */

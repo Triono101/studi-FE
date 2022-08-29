@@ -7,6 +7,7 @@ import {
   MDBIcon,
   MDBBtn,
 } from "mdb-react-ui-kit";
+import "../components/Footer.css";
 
 const Footer = () => {
   return (
@@ -218,63 +219,23 @@ const Footer = () => {
                 <p style={{ color: "white" }}>Follow us on social media</p>
               </div>
               <>
-                <MDBBtn
-                  className="m-1"
-                  style={{
-                    backgroundColor: "#4267B2",
-                    border: "none",
-                    borderRadius: "50%",
-                  }}
-                  href="#"
-                >
+                <MDBBtn className="btn1 m-1" href="#">
                   <MDBIcon fab icon="facebook-f" />
                 </MDBBtn>
 
-                <MDBBtn
-                  className="m-1"
-                  style={{
-                    backgroundColor: "#1DA1F2",
-                    border: "none",
-                    borderRadius: "50%",
-                  }}
-                  href="#"
-                >
+                <MDBBtn className="btn2 m-1" href="#">
                   <MDBIcon fab icon="twitter" />
                 </MDBBtn>
 
-                <MDBBtn
-                  className="m-1"
-                  style={{
-                    backgroundColor: "#833AB4",
-                    border: "none",
-                    borderRadius: "50%",
-                  }}
-                  href="#"
-                >
+                <MDBBtn className="btn3 m-1" href="#">
                   <MDBIcon fab icon="instagram" />
                 </MDBBtn>
 
-                <MDBBtn
-                  className="m-1"
-                  style={{
-                    backgroundColor: "#0082ca",
-                    border: "none",
-                    borderRadius: "50%",
-                  }}
-                  href="#"
-                >
+                <MDBBtn className="btn4 m-1" href="#">
                   <MDBIcon fab icon="linkedin-in" />
                 </MDBBtn>
 
-                <MDBBtn
-                  className="m-1"
-                  style={{
-                    backgroundColor: "#25D366",
-                    border: "none",
-                    borderRadius: "50%",
-                  }}
-                  href="#"
-                >
+                <MDBBtn className="btn5 m-1" href="#">
                   <MDBIcon fab icon="whatsapp" />
                 </MDBBtn>
               </>

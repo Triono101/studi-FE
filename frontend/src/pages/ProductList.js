@@ -27,10 +27,10 @@ const ProductList = () => {
 
   return (
     <div className="item-container">
-      <Link className="btn btn-light my-3" to="/">
-        Back
-      </Link>
       <Container>
+        <Link className="button01 btn my-3" to="/">
+          Back
+        </Link>
         <FilterContainer>
           <Title>Product: {cat}</Title>
           <Filter>
@@ -39,8 +39,6 @@ const ProductList = () => {
               <Option disabled>Color</Option>
               <Option>black</Option>
               <Option>blue</Option>
-              <Option>brown</Option>
-              <Option>green</Option>
             </Select>
           </Filter>
           <Filter>
